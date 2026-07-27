@@ -67,4 +67,90 @@
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
-
+def add(a, b):
+    return a + b
+ 
+ 
+def subtract(a, b):
+    return a - b
+ 
+ 
+def multiply(a, b):
+    return a * b
+ 
+ 
+def divide(a, b):
+    if b == 0:
+        return None
+    return round(a / b, 2)
+ 
+ 
+def modulus(a, b):
+    if b == 0:
+        return None
+    return a % b
+ 
+ 
+def exponentiate(a, b):
+    return a ** b
+ 
+ 
+def get_numbers():
+    first = float(input("Enter first number : "))
+    second = float(input("Enter second number: "))
+    return first, second
+ 
+ 
+def show_menu():
+    print("\n============================")
+    print("     SIMPLE CALCULATOR")
+    print("============================")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Modulus")
+    print("6. Exponentiation")
+    print("7. Quit")
+ 
+ 
+def main():
+    while True:
+        show_menu()
+        choice = input("Select an operation (1-7): ")
+ 
+        if choice == "7":
+            print("Goodbye!")
+            break
+ 
+        if choice not in ("1", "2", "3", "4", "5", "6"):
+            print("Invalid choice. Please enter a number between 1 and 7.")
+            continue
+ 
+        a, b = get_numbers()
+ 
+        if choice == "1":
+            print(f"Result: {a} + {b} = {add(a, b)}")
+        elif choice == "2":
+            print(f"Result: {a} - {b} = {subtract(a, b)}")
+        elif choice == "3":
+            print(f"Result: {a} * {b} = {multiply(a, b)}")
+        elif choice == "4":
+            result = divide(a, b)
+            if result is None:
+                print("Error: Cannot divide by zero.")
+            else:
+                print(f"Result: {a} / {b} = {result}")
+        elif choice == "5":
+            result = modulus(a, b)
+            if result is None:
+                print("Error: Cannot divide by zero.")
+            else:
+                print(f"Result: {a} % {b} = {result}")
+        elif choice == "6":
+            print(f"Result: {a} ** {b} = {exponentiate(a, b)}")
+ 
+ 
+if __name__ == "__main__":
+    main()
+ 
