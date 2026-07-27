@@ -55,3 +55,30 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+def print_tables_up_to_n(n):
+    """Print multiplication tables for every number from 1 to n."""
+    for number in range(1, n + 1):
+        print_table(number)
+        if number != n:
+            print("---------------------------")
+
+
+def main():
+    # ---- PART A: Single table ----
+    number = int(input("Enter a number: "))
+    print_table(number)
+
+    print()
+
+    # ---- PART B: Tables from 1 to N ----
+    n = int(input("Enter a number N: "))
+
+    if n <= 0:
+        print("Error: N must be a positive integer.")
+        return
+
+    print_tables_up_to_n(n)
+
+
+if _name_ == "_main_":
+    main()
