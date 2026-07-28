@@ -59,6 +59,7 @@
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
+
 def read_matrix(rows, cols, label=""):
     """Read a matrix of the given size from the user, row by row."""
     matrix = []
