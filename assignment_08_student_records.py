@@ -89,9 +89,8 @@
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
+
 students = []
- 
- 
 def add_student():
     name = input("Student name: ")
     student_id = input("Student ID: ")
