@@ -43,6 +43,8 @@
 #
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
+# =============================================================================
+
 def get_grade(score):
     """Return the letter grade for a valid score, or None if invalid."""
     if score < 0 or score > 100:
