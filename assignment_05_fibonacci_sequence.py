@@ -48,6 +48,7 @@
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
+
 def print_fibonacci_terms(n):
     """Print the first n Fibonacci numbers on one line, using a loop."""
     sequence = []
